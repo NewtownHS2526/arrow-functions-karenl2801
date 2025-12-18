@@ -22,16 +22,18 @@ Write your solution using:
 const exercise1Array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // Your solution here (one-line arrow function):
-// const exercise1Result1 = 
-
+const exercise1Result1 = exercise1Array.reduce((sum, num) => num % 2 === 0 ? sum + num : sum, 0);
 // Your solution here (regular arrow function):
-// const exercise1Result2 = 
+const exercise1Result2 = exercise1Array.reduce((sum, num) => {
+  if (num % 2 === 0) return sum + num;
+  else return sum;
+}, 0);
 
 // Uncomment to test:
-// console.log("Exercise 1 - One-line:", exercise1Result1);
-// console.log("Exercise 1 - Regular:", exercise1Result2);
+ console.log("Exercise 1 - One-line:", exercise1Result1);
+ console.log("Exercise 1 - Regular:", exercise1Result2);
 // Expected: 30 (2 + 4 + 6 + 8 + 10)
-
+ 
 /*
 EXERCISE 2
 ----------
@@ -56,14 +58,15 @@ const exercise2Array = [
 ];
 
 // Your solution here (one-line arrow function):
-// const exercise2Result1 = 
-
+const exercise2Result1 = exercise2Array.reduce((total, person) => total + person.age, 0);
 // Your solution here (regular arrow function):
-// const exercise2Result2 = 
+const exercise2Result2 = exercise2Array.reduce((total, person) => {
+  return total + person.age;
+}, 0);
 
 // Uncomment to test:
-// console.log("Exercise 2 - One-line:", exercise2Result1);
-// console.log("Exercise 2 - Regular:", exercise2Result2);
+console.log("Exercise 2 - One-line:", exercise2Result1);
+console.log("Exercise 2 - Regular:", exercise2Result2);
 // Expected: 90
 
 /*
@@ -81,14 +84,15 @@ Write your solution using:
 const exercise3Array = ["hello", "world", "javascript"];
 
 // Your solution here (one-line arrow function):
-// const exercise3Result1 = 
-
+const exercise3Result1 = exercise3Array.reduce((acc, word, index) => acc + (index ? " - " : "") + word.toUpperCase(), "");
 // Your solution here (regular arrow function):
-// const exercise3Result2 = 
-
+const exercise3Result2 = exercise3Array.reduce((acc, word, index) => {
+  if (index === 0) return word.toUpperCase();
+  return acc + " - " + word.toUpperCase();
+}, "");
 // Uncomment to test:
-// console.log("Exercise 3 - One-line:", exercise3Result1);
-// console.log("Exercise 3 - Regular:", exercise3Result2);
+console.log("Exercise 3 - One-line:", exercise3Result1);
+console.log("Exercise 3 - Regular:", exercise3Result2);
 // Expected: "HELLO - WORLD - JAVASCRIPT"
 
 /*
@@ -104,14 +108,18 @@ Write your solution using:
 const exercise4Array = [12, 45, 8, 23, 56, 9];
 
 // Your solution here (one-line arrow function):
-// const exercise4Result1 = 
+const exercise4Result1 = exercise4Array.reduce((min, num) => num < min ? num : min);
 
 // Your solution here (regular arrow function):
-// const exercise4Result2 = 
+const exercise4Result2 = exercise4Array.reduce((min, num) => {
+  if (num < min) return num;
+  else return min;
+});
+
 
 // Uncomment to test:
-// console.log("Exercise 4 - One-line:", exercise4Result1);
-// console.log("Exercise 4 - Regular:", exercise4Result2);
+console.log("Exercise 4 - One-line:", exercise4Result1);
+ console.log("Exercise 4 - Regular:", exercise4Result2);
 // Expected: 8
 
 /*
@@ -128,13 +136,15 @@ Write your solution using:
 const exercise5Array = [1, 2, 3, 4, 5];
 
 // Your solution here (one-line arrow function):
-// const exercise5Result1 = 
-
+const exercise5Result1 = exercise5Array.reduce((count, num) => num > 2 ? count + 1 : count, 0);
 // Your solution here (regular arrow function):
-// const exercise5Result2 = 
+const exercise5Result2 = exercise5Array.reduce((count, num) => {
+  if (num > 2) return count + 1;
+  else return count;
+}, 0);
 
 // Uncomment to test:
-// console.log("Exercise 5 - One-line:", exercise5Result1);
-// console.log("Exercise 5 - Regular:", exercise5Result2);
+ console.log("Exercise 5 - One-line:", exercise5Result1);
+ console.log("Exercise 5 - Regular:", exercise5Result2);
 // Expected: 3
 

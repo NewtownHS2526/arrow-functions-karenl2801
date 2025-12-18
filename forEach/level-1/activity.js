@@ -119,10 +119,12 @@ Write your solution using:
 const exercise1Array = [1, 2, 3, 4, 5];
 
 // Your solution here (one-line arrow function):
-// exercise1Array.forEach(
+exercise1Array.forEach(num => console.log(num * 2));
 
 // Your solution here (regular arrow function):
-// exercise1Array.forEach((
+exercise1Array.forEach((num) => {
+  console.log(num * 2);
+});
 
 // Expected output: 2, 4, 6, 8, 10 (each on a new line)
 
@@ -140,10 +142,12 @@ Write your solution using:
 const exercise2Array = ["apple", "banana", "orange"];
 
 // Your solution here (one-line arrow function):
-// exercise2Array.forEach(
+exercise2Array.forEach(fruit => console.log(fruit.toUpperCase()));
 
 // Your solution here (regular arrow function):
-// exercise2Array.forEach((
+exercise2Array.forEach((fruit) => {
+  console.log(fruit.toUpperCase());
+});
 
 // Expected output: "APPLE", "BANANA", "ORANGE" (each on a new line)
 
@@ -162,13 +166,15 @@ const exercise3Array = [5, 10, 15, 20];
 let exercise3Sum = 0;
 
 // Your solution here (one-line arrow function):
-// exercise3Array.forEach(
+exercise3Array.forEach(num => exercise3Sum += num);
 
 // Your solution here (regular arrow function):
-// exercise3Array.forEach((
+exercise3Array.forEach((num) => {
+  exercise3Sum += num;
+});
 
 // Uncomment to test:
-// console.log("Exercise 3 - Sum:", exercise3Sum);
+ console.log("Exercise 3 - Sum:", exercise3Sum);
 // Expected: 50
 
 /*
@@ -185,10 +191,12 @@ Write your solution using:
 const exercise4Array = ["red", "green", "blue"];
 
 // Your solution here (one-line arrow function):
-// exercise4Array.forEach(
+exercise4Array.forEach(color => console.log(`Color: ${color}`));
 
 // Your solution here (regular arrow function):
-// exercise4Array.forEach((
+exercise4Array.forEach((color) => {
+  console.log(`Color: ${color}`);
+});
 
 // Expected output: "Color: red", "Color: green", "Color: blue" (each on a new line)
 
@@ -206,10 +214,12 @@ Write your solution using:
 const exercise5Array = [2, 4, 6, 8];
 
 // Your solution here (one-line arrow function):
-// exercise5Array.forEach(
+exercise5Array.forEach(num => console.log(num * num));
 
 // Your solution here (regular arrow function):
-// exercise5Array.forEach((
+exercise5Array.forEach((num) => {
+  console.log(num * num);
+});
 
 // Expected output: 4, 16, 36, 64 (each on a new line)
 

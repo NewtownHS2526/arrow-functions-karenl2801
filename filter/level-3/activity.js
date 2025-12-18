@@ -32,14 +32,16 @@ const exercise1Array = [
 ];
 
 // Your solution here (one-line arrow function):
-// const exercise1Result1 = 
+const exercise1Result1 = exercise1Array.filter(item => item.inStock);
 
 // Your solution here (regular arrow function):
-// const exercise1Result2 = 
+const exercise1Result2 = exercise1Array.filter((item) => {
+  return item.inStock;
+});
 
 // Uncomment to test:
-// console.log("Exercise 1 - One-line:", exercise1Result1);
-// console.log("Exercise 1 - Regular:", exercise1Result2);
+ console.log("Exercise 1 - One-line:", exercise1Result1);
+ console.log("Exercise 1 - Regular:", exercise1Result2);
 // Expected: [{ product: "Laptop", price: 1000, inStock: true }, { product: "Keyboard", price: 75, inStock: true }]
 
 /*
@@ -68,14 +70,16 @@ const exercise2Array = [
 ];
 
 // Your solution here (one-line arrow function):
-// const exercise2Result1 = 
+const exercise2Result1 = exercise2Array.filter(person => person.city === "New York");
 
 // Your solution here (regular arrow function):
-// const exercise2Result2 = 
+const exercise2Result2 = exercise2Array.filter((person) => {
+  return person.city === "New York";
+});
 
 // Uncomment to test:
-// console.log("Exercise 2 - One-line:", exercise2Result1);
-// console.log("Exercise 2 - Regular:", exercise2Result2);
+ console.log("Exercise 2 - One-line:", exercise2Result1);
+ console.log("Exercise 2 - Regular:", exercise2Result2);
 // Expected: [{ name: "Alice", age: 25, city: "New York" }, { name: "Charlie", age: 35, city: "New York" }]
 
 /*
@@ -92,14 +96,16 @@ Write your solution using:
 const exercise3Array = [100, 250, 75, 500, 120, 300, 80];
 
 // Your solution here (one-line arrow function):
-// const exercise3Result1 = 
+const exercise3Result1 = exercise3Array.filter(num => num % 25 === 0);
 
 // Your solution here (regular arrow function):
-// const exercise3Result2 = 
+const exercise3Result2 = exercise3Array.filter((num) => {
+  return num % 25 === 0;
+});
 
 // Uncomment to test:
-// console.log("Exercise 3 - One-line:", exercise3Result1);
-// console.log("Exercise 3 - Regular:", exercise3Result2);
+ console.log("Exercise 3 - One-line:", exercise3Result1);
+ console.log("Exercise 3 - Regular:", exercise3Result2);
 // Expected: [100, 250, 75, 500, 300]
 
 /*
@@ -129,14 +135,16 @@ const exercise4Array = [
 ];
 
 // Your solution here (one-line arrow function):
-// const exercise4Result1 = 
+const exercise4Result1 = exercise4Array.filter(book => book.pages > 200);
 
 // Your solution here (regular arrow function):
-// const exercise4Result2 = 
+const exercise4Result2 = exercise4Array.filter((book) => {
+  return book.pages > 200;
+});
 
 // Uncomment to test:
-// console.log("Exercise 4 - One-line:", exercise4Result1);
-// console.log("Exercise 4 - Regular:", exercise4Result2);
+ console.log("Exercise 4 - One-line:", exercise4Result1);
+ console.log("Exercise 4 - Regular:", exercise4Result2);
 // Expected: [{ title: "Book B", pages: 300 }, { title: "Book D", pages: 450 }]
 
 /*
@@ -154,13 +162,14 @@ Write your solution using:
 const exercise5Array = ["hello", "world", "javascript", "coding", "fun"];
 
 // Your solution here (one-line arrow function):
-// const exercise5Result1 = 
-
+const exercise5Result1 = exercise5Array.filter(word => word.length % 2 !== 0);
 // Your solution here (regular arrow function):
-// const exercise5Result2 = 
+const exercise5Result2 = exercise5Array.filter((word) => {
+  return word.length % 2 !== 0;
+});
 
 // Uncomment to test:
-// console.log("Exercise 5 - One-line:", exercise5Result1);
-// console.log("Exercise 5 - Regular:", exercise5Result2);
+ console.log("Exercise 5 - One-line:", exercise5Result1);
+ console.log("Exercise 5 - Regular:", exercise5Result2);
 // Expected: ["hello", "world", "coding", "fun"]
 
